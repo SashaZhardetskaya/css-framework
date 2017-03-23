@@ -1,18 +1,23 @@
 
-body {
+.body-container {
+	display: flex;
+	justify-content: center;
+	min-width: 1140px;
+}
+
+.container-center {
 	font-family: 'Roboto', sans-serif;
 	width: 1140px;
 	height: 2552px;
-	padding-left: 381px;
-	padding-right:382px; 
 	color: #444444;
 }
+
 
 /****Colors****/
 
 .block-name{
 	border-bottom: 1px solid #e8e8e8;
-	font-size: 30px;
+	font-size: 28px;
 	color: #5a5a5a;
 	font-weight: 300;
 	font-stretch: condensed;
@@ -30,8 +35,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 31px;
-	margin-bottom: 48px;
+	margin: 31px 0px 48px 0px;
 }
 
 .ContainerColorBig {
@@ -67,9 +71,10 @@ body {
 	border-top: solid 2px #f3f3f3;
 	color: #444444;
 	font-size: 18px;
+	padding-left: 25px;
 }
 
-.ContainerSign span {
+.container-sign-no {
 	font-size: 14px;
 	color: #bbbbbb;
 }
@@ -116,8 +121,7 @@ body {
 }
 
 .typography-title{
-	margin-top: 30px;
-	margin-bottom: 28px;
+	margin: 30px 0px 22px 0px;
 }
 
 h1{
@@ -125,8 +129,7 @@ h1{
 	font-weight: 300;
 	font-stretch: condensed;
 	line-height: 17px;
-	margin-top: 19px;
-	margin-bottom: 17px;
+	margin: 25px 0px 17px 0px;
 }
 
 h2{
@@ -134,8 +137,7 @@ h2{
 	font-weight: 700;
 	font-stretch: condensed;
 	line-height: 17px;
-	margin-top: 17px;
-	margin-bottom: 17px;
+	margin: 17px 0px 17px 0px;
 }
 
 h3{
@@ -143,8 +145,7 @@ h3{
 	font-weight: bold;
 	font-stretch: condensed;
 	line-height: 16px;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin: 16px 0px 16px 0px;
 }
 
 h4{
@@ -152,8 +153,7 @@ h4{
 	font-weight: bold;
 	font-stretch: condensed;
 	line-height: 12px;
-	margin-top: 11px;
-	margin-bottom: 11px;
+	margin: 11px 0px 11px 0px;
 }
 
 h5{
@@ -161,8 +161,7 @@ h5{
 	font-weight: 400;
 	font-stretch: condensed;
 	line-height: 12px;
-	margin-top: 11px;
-	margin-bottom: 11px;
+	margin: 11px 0px 11px 0px;
 }
 
 h6{
@@ -170,8 +169,7 @@ h6{
 	font-weight: 400;
 	font-stretch: condensed;
 	line-height: 10px;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin: 8px 0px 8px 0px;
 }
 
 .body-text{
@@ -180,18 +178,29 @@ h6{
 	flex-direction: column;
 }
 
-.body-text p, li { 
+.hyper-link{
+	color: #71b6ea;
+}
+
+.body-text-font{ 
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
 	color: #666666;
 }
 
-.body-text li{
+.body-text-list{ 
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #666666;
+}
+
+.body-text-list li{
 	color: #3464a7;
 }
 
-.body-text li span{
+.body-text-list span{
 	color: #666666;
 }
 
@@ -213,10 +222,10 @@ h6{
 	outline: none;
 	color: #ffffff;
 	font-size: 24px;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 0px;
 	font-size: 18px;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .ButtonStyle2{
@@ -229,11 +238,10 @@ h6{
 	outline: none;
 	color: #1396E2;
 	font-size: 24px;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 25px;
 	font-size: 18px;
 	font-weight: 600;
-	margin-left: 25px;
+	cursor: pointer;
 }
 
 .ButtonStyleActive1{
@@ -244,11 +252,11 @@ h6{
 	background: #073855;
 	outline: none;
 	color: #ffffff;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 0px;
 	font-size: 24px;
 	font-size: 18px;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .ButtonStyleActive2{
@@ -260,12 +268,11 @@ h6{
 	background: #ffffff;
 	outline: none;
 	color: #073855;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 25px;
 	font-size: 24px;
 	font-size: 18px;
 	font-weight: 600;
-	margin-left: 25px;
+	cursor: pointer;
 }
 
 .sizes-container{
@@ -281,8 +288,8 @@ h6{
 	text-align: center;
 	background: #e8e8e8;
 	outline: none;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 0px;
+	cursor: pointer;
 }
 
 .LargeButton span {
@@ -298,8 +305,8 @@ h6{
 	text-align: center;
 	background: #e8e8e8;
 	outline: none;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 0px;
+	cursor: pointer;
 }
 
 .MediumButton span {
@@ -315,8 +322,8 @@ h6{
 	text-align: center;
 	background: #e8e8e8;
 	outline: none;
-	margin-top: 2px;
-	margin-bottom: 18px;
+	margin: 2px 0px 18px 0px;
+	cursor: pointer;
 }
 
 .SmallButton span {
@@ -372,17 +379,19 @@ h6{
 	box-shadow: inset 0px 1px 1px #918f8f;
 }
 
-.search-form span {
+.search-form button {
+	-webkit-appearance: none;
+	outline: none;
 	height: 41px;
 	width: 41px;
-	padding: 0px;
-	margin: 0px;
 	margin-top: 3px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #1396e2;
 	color: white;
+	border: 0px;
+	cursor: pointer;
 }
 
 .text-form-big {
@@ -393,8 +402,7 @@ h6{
 	outline: none;
 	-webkit-appearance: none;
 	font-size: 16px;
-	padding-left: 15px;
-	padding-bottom: 28px;
+	padding: 0px 0px 28px 15px;
 	margin-top: 3px;
 	color: #a3a3a3;
 	box-shadow: inset 0px 1px 1px #918f8f;
@@ -413,28 +421,25 @@ h6{
 	flex-direction:row;
 	align-items: center;
 	background: #e7f4fc;
-	margin-left: 13px;
-	margin-top: 60px;
-	margin-bottom: 5px;
+	margin: 60px 0px 5px 13px;
 }
 
 .form-style-button { 
 	width: 20px;
 	height: 20px;
 	margin-right: 15px;
+	outline: none;
+	-webkit-appearance: none;
 }
 
 .form-style-text {
 	width: 523px;
-	height: 45px;
-	padding: 0px;
 	margin-left: 20px;
-	border: none;
 	background: #e7f4fc;
-	outline: none;
-	-webkit-appearance: none;
 	color: #1396e2;
 	font-size: 16px;
+	display: flex;
+	align-items: center;
 }
 
 .form-style2{
@@ -444,22 +449,17 @@ h6{
 	flex-direction:row;
 	align-items: center;
 	background: #f1f8e8;
-	margin-left: 13px;
-	margin-top: 15px;
-	margin-bottom: 5px;
+	margin: 15px 0px 5px 13px;
 }
 
 .form-style-text2{
 	width: 523px;
-	height: 45px;
-	padding: 0px;
 	margin-left: 20px;
-	border: none;
 	background: #f1f8e8;
-	outline: none;
-	-webkit-appearance: none;
 	color: #76bd22;
 	font-size: 16px;
+	display: flex;
+	align-items: center;
 }
 
 .form-style3{
@@ -469,57 +469,52 @@ h6{
 	flex-direction:row;
 	align-items: center;
 	background: #feeaec;
-	margin-left: 13px;
-	margin-top: 15px;
+	margin: 15px 0px 0px 13px;
 }
 
 .form-style-text3{
 	width: 523px;
-	height: 45px;
-	padding: 0px;
 	margin-left: 20px;
-	border: none;
 	background: #feeaec;
-	outline: none;
-	-webkit-appearance: none;
 	color: #f63440;
 	font-size: 16px;
+	display: flex;
+	align-items: center;
 }
 
 
 /***UI Elements**/
 
 .big-img {
-	margin-top: 57px;
-	margin-bottom: 13px;
+	margin: 57px 0px 13px 0px;
 }
 
 #markup-color {
 	color: #073855;
+	margin-top: 19px;
 }
 
-.ikon{
+.icon{
 	color: #1396E2; 
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0px 10px 0px 10px;
 }
 
-.ikon-sign{
+.icon-sign{
 	color: #5a5a5a;
 	font-size: 14px;
 	margin-bottom: 28px;
 }
 
-.teg{
+.tag{
 	background: #f3f3f3;
-	box-shadow: -2px 1px 3px #c7c7c7;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-left: 7px;
-	padding-right: 7px;
+	border-left: solid 2px #c7c7c7;
+	box-shadow: -2px 1px 2px #c7c7c7;
+	padding: 4px 7px 4px 7px;
 	margin-right: 10px;
 	font-size: 12px;
 	font-weight: 600;
+	text-decoration: none; /*if I don't need link - delete it*/
+	color: #000000; /*if I don't need link - delete it*/
 }
 
 .text-ui {
@@ -528,16 +523,17 @@ h6{
 	font-size: 14px;
 	line-height: 20px;
 	margin-top: 30px;
-	margin-bottom: 20px;
 }
 
 #ReadMore{
-	margin-right:10px;
+	margin-top: 8px;
 	color: #5a5a5a;
+	font-size: 15px;
 }
-#ReadMore i{
+
+.readmore-icon{
+	margin-left: 10px;
 	color: #1396E2; 
-	font: bold;
 }
 
 .container-ui2{ 
@@ -556,8 +552,7 @@ h6{
 
 .list i{
 	color: #1396E2; 
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 0px 10px 0px 10px;
 }
 
 .list li{
@@ -565,11 +560,14 @@ h6{
 	height: 40px;
 	display: flex;
 	align-items: center;
-	color: #2a2a2a;
 	font-size: 15px;
 	font-weight: 400;
-	margin-left: 13px;
-	margin-bottom: 5px;
+	margin: 0px 0px 5px 13px;
+}
+
+.list a{
+	text-decoration: none;
+	color: #2a2a2a;
 }
 
 li.Active{
@@ -582,8 +580,8 @@ li.Active:after {
 	content: '';
 	border:  5px solid transparent;	
 	border-left:  5px solid #073855;
-	position: absolute;
-	right: 102px;
+	position: relative;
+    left: 192px;
 	margin-top: 5px;
 }
 
@@ -611,7 +609,18 @@ li.Active:after {
   
 .pager .pager-hover{
     border-top:6px solid #1396E2;
-    color: #1396E2;
 }
 
+.pager a{
+	text-decoration: none;
+	color: #5a5a5a;
+}
+
+.pager-current a{
+	color: #073855;
+}
+
+.pager-hover a{
+	color: #1396E2;
+}
   
